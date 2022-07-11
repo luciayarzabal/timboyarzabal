@@ -61,6 +61,11 @@ body {
     margin: 0 10px;
     display: flex;
     align-items: center;
+    transition: transform 0.5s;
+    transform-origin: left;
+}
+.navegacion__lista__elemento:hover {
+    transform: scale(1.05);
 }
 .navegacion__lista__elemento:last-child .navegacion__lista__elemento__enlace:first-child {
     margin-right: 10px;
@@ -91,6 +96,11 @@ body {
     font-size: 45px;
     font-family: roboto regular;
     margin-top: 40px;
+    transition: transform 1s;
+    transform-origin: left;   
+}
+.texto-principal__titulo:hover {
+    transform: scale(1.4);
 }
 .texto-principal__cuerpo {
     margin-top: 20px;
@@ -114,7 +124,24 @@ body {
     justify-content: center;
 }
 .iconos__elemento {
-    margin: 0px 25px
+    margin: 0px 25px;
+}
+.iconos__elemento:hover {
+    animation: sacudida 0.5s infinite linear;
+}
+@keyframes sacudida {
+    from,
+    50%,
+    to {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+    
 }
 .iconos__elemento__enlace {
     text-decoration: none;
@@ -146,6 +173,11 @@ body {
     border-radius: 7px;
     white-space: nowrap;
     align-self: flex-end;
+    transition: transform 0.5s;
+    transform-origin: left;
+}
+.ver-mas:hover {
+    transform: scale(0.8);
 }
 .principal-paginas {
     max-width: 80%;
@@ -254,6 +286,10 @@ body {
     font-family: roboto bold;
     text-decoration: none;
     color: white;
+    transition: font-size 0.5s;
+}
+.contacto:hover {
+    font-size: 16.8px;
 }
 .social {
     font-family: roboto bold;
