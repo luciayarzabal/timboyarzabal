@@ -5,41 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIMBÓ | Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="pagina-contacto">
         <header class="header">
-            <a href="index.html"><img class="logotipo" src="/imagenes/logotipo.svg" alt="logotipo de Timbó"></a>
-            <nav class="navegacion">
-                <ul class="navegacion__lista">
-                    <li class="navegacion__lista__elemento">
-                        <a class="navegacion__lista__elemento__enlace" href="sobre_nosotros.html">Sobre nosotros</a>
-                    </li>
-                    <li class="navegacion__lista__elemento">
-                        <a class="navegacion__lista__elemento__enlace" href="proyecto_educativo.html">Proyecto educativo</a>
-                    </li>
-                    <li class="navegacion__lista__elemento">
-                        <a class="navegacion__lista__elemento__enlace" href="extension_cultural.html">Extensión cultural</a>
-                    </li>
-                    <li class="navegacion__lista__elemento">
-                        <a class="navegacion__lista__elemento__enlace" href="cuidado_ambiental.html">Cuidado ambiental</a>
-                    </li>
-                    <li class="navegacion__lista__elemento">
-                        <a class="navegacion__lista__elemento__enlace" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="navegacion__lista__elemento">
-                        <a class="navegacion__lista__elemento__enlace" href="/">
-                            <img class="navegacion__lista__elemento__icono-social" src="/imagenes/icono_facebook.svg" alt="logotipo de facebook">
-                        </a>
-                    </li>
-                    <li class="navegacion__lista__elemento">
-                        <a class="navegacion__lista__elemento__enlace" href="/">
-                            <img class="navegacion__lista__elemento__icono-social" src="/imagenes/icono_instagram.svg" alt="logotipo de Instagram">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/">
+                    <img class="logotipo" src="/imagenes/logotipo.svg" alt="logotipo de Timbó">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse text-center text-xl-start" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-3">
+                      <li class="nav-item">
+                        <a class="nav-link" href="sobre_nosotros.html">Sobre nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="proyecto_educativo.html">Proyecto educativo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="extension_cultural.html">Extensión cultural</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cuidado_ambiental.html">Cuidado ambiental</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/"><img class="navegacion__lista__elemento__icono-social" src="/imagenes/icono_facebook.svg" alt="logotipo de Facebook"></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/"><img class="navegacion__lista__elemento__icono-social" src="/imagenes/icono_instagram.svg" alt="logotipo de Instagram"></a>
+                      </li>
+                    </ul>
+                  </div>
+              </nav>
         </header>
         <main>
             <section class="principal-paginas">
@@ -47,22 +52,25 @@
                 <p class="paginas__cuerpo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit pariatur libero saepe cum? Atque suscipit incidunt reprehenderit rem. Expedita, hic voluptatum reiciendis laborum soluta consequatur consequuntur autem dolorum rerum non. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
             <section>
-                <form class="formulario" action="">
-                    <div class="formulario__grupo">
-                        <label class="formulario__etiqueta" for="nombre">Nombre completo</label>
-                        <input class="formulario__campo" name="nombre" id="nombre" type="text" size="">
+                <form class="formulario container-fluid" action="">
+                    <div class="formulario__grupo row">
+                        <label class="formulario__etiqueta col-12 col-md-4" for="nombre">Nombre completo</label>
+                        <input class="formulario__campo col-12 col-md-8" name="nombre" id="nombre" type="text" size="">
                     </div>
-                    <div class="formulario__grupo">
-                        <label class="formulario__etiqueta" for="telefono">Teléfono de contacto</label>
-                        <input class="formulario__campo"id="tel" name="tel" type="tel">
+                    <div class="formulario__grupo row">
+                        <label class="formulario__etiqueta col-12 col-md-4" for="telefono">Teléfono de contacto</label>
+                        <input class="formulario__campo col-12 col-md-8"id="tel" name="tel" type="tel">
                     </div>
-                    <div class="formulario__grupo">
-                        <label  class="formulario__etiqueta" for="mail">Correo electrónico</label>
-                        <input class="formulario__campo"id="mail" name="mail" type="email">
+                    <div class="formulario__grupo row">
+                        <label  class="formulario__etiqueta col-12 col-md-4" for="mail">Correo electrónico</label>
+                        <input class="formulario__campo col-12 col-md-8"id="mail" name="mail" type="email">
                     </div>
-                    <div class="formulario__grupo">
-                        <label class="formulario__etiqueta" for="mensaje">Mensaje</label>
-                        <textarea class="campo__mensaje" name="" id="" cols="30" rows="10"></textarea>
+                    <div class="formulario__grupo row">
+                        <label class="formulario__etiqueta col-12" for="mensaje">Mensaje</label>
+                        <textarea class="campo__mensaje col-12" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="boton row">
+                        <button type="button" class="btn btn-enviar col-12">Enviar</button>
                     </div>
                 </form>
             </section>
@@ -82,5 +90,6 @@
             </div>
         </footer>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
