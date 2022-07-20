@@ -9,16 +9,15 @@ body {
     font-family: roboto;
     font-size: 18px;
 }
-.pagina-contacto {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas:
-    "header"
-    "principal-paginas"
-    "footer";
-}
 img {
     max-width: 100%;
+}
+h2 {
+    transition: transform 1s;
+    transform-origin: left;
+}
+h2:hover {
+    transform: scale(1.2);
 }
 @font-face {
     font-family: roboto;
@@ -47,38 +46,29 @@ img {
 }
 .nav-link {
     color: white;
-    font-weight: bold;
+    font-weight: regular ;
+    font-size: smaller;   
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     color: white;
 }
-.logotipo {
-    vertical-align: middle;
+.nav-item {
+    transition: text-decoration 0.5s;
 }
-.navegacion__lista {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.nav-item:hover {
+    text-decoration: underline white 1.5px;
 }
-.navegacion__lista__elemento {
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
-    transition: transform 0.5s;
-    transform-origin: left;
+.dropdown-menu {
+    background-color: white;
+    color: black;
+    border: black solid 1px;
 }
-.navegacion__lista__elemento:hover {
-    transform: scale(1.05);
+.dropdown-item {
+    transition: text-decoration;
 }
-.navegacion__lista__elemento:last-child .navegacion__lista__elemento__enlace:first-child {
-    margin-right: 10px;
-}
-.navegacion__lista__elemento__enlace {
-    text-decoration: none;
-    color: white;
-    font-family: roboto;
-    font-weight: bold;
+.dropdown-item:hover {
+    text-decoration: underline #E10029 1.5px;
 }
 .navbar-toggler-icon {
     width: 1em;
@@ -116,9 +106,9 @@ img {
     transition: transform 1s;
     transform-origin: left;   
 }
-/* .texto-principal__titulo:hover {
-    transform: scale(1.4);
-} */
+.texto-principal__titulo:hover {
+    transform: scale(1.2);
+} 
 .texto-principal__cuerpo {
     margin-top: 20px;
 }
@@ -160,13 +150,11 @@ img {
     75% {
         transform: rotate(-20deg);
     }
-    
 }
 .iconos__elemento__enlace {
     text-decoration: none;
 }
 .sobre-nosotros {
-    margin-left: 20px;
     margin-bottom: 40px;
     margin-top: 40px;
     display: flex;
@@ -176,23 +164,10 @@ img {
     font-size: 25px;
     margin-bottom: 20px;
 }
-.ver-mas{
-    font-family: roboto;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    padding: 3px;
-    border: solid #E10029; 
-    border-radius: 7px;
-    white-space: nowrap;
-    align-self: flex-end;
-    transition: transform 0.5s;
-    transform-origin: left;
-}
-.ver-mas:hover {
-    transform: scale(0.8);
-    color: black;
+.btn.btn-vermas {
+    background-color: #E10029;
+    color: white;
+    margin-top: 20px;
 }
 .principal-paginas {
     max-width: 80%;
@@ -210,55 +185,21 @@ img {
     transform: scale(1.2);
 } 
 .paginas__cuerpo {
-    margin-top: 20px;
     margin-bottom: 20px;
 }
-.falso-carrusel {
-    width: 100%;
+.carousel-inner {
+    max-height: 600px;
+    overflow: hidden;
 }
 .secundario-paginas {
-    width: 1243px;
+    width: 80%;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 .secundario-paginas__titulo {
     font-size: 25px;
-}
-.secundario-paginas__columna-uno {
-    width: 49%;
-    display: inline-block;
-    vertical-align: middle;
-}
-.secundario-paginas__columna-dos {
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-}
-.secundario-paginas__columna-dos--verticalcentrado {
-    vertical-align: middle;
-    margin: auto;
-}
-.falso-menu-secundario {
-    display: inline-block;
-    margin-left: 40px;
-}
-.falso-menu-secundario__lista {
-    list-style: none;
-}
-.falso-menu-secundario__elemento {
-    border: black 1px solid;
-    border-radius: 7px;
-    padding: 10px;
-    width: 530px;
-    text-align: center;
-    font-family: roboto;
-    font-weight: bold;
-    margin: 10px 0;
-}
-.falso-menu-secundario__elemento__enlace {
-    text-decoration: none;
-    color:black
+    margin-bottom: 20px;
 }
 .formulario {
     max-width: 800px;

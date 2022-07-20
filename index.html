@@ -10,42 +10,64 @@
 </head>
 <body>
     <div class="inicio">
-        <header class="header">
-            <nav class="navbar navbar-expand-xl navbar-dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="/">
-                    <img class="logotipo" src="/imagenes/logotipo.svg" alt="logotipo de Timbó">
+      <header class="header">
+        <nav class="navbar navbar-expand-xl navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="/Imagenes/logotipo.svg" alt="logotipo de Timbó"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center text-xl-start" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="sobre_nosotros.html">Sobre nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="proyecto_educativo.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Proyecto educativo
                   </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse text-center text-xl-start" id="navbarNav">
-                    <ul class="navbar-nav ms-auto me-3">
-                      <li class="nav-item">
-                        <a class="nav-link" href="sobre_nosotros.html">Sobre nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="proyecto_educativo.html">Proyecto educativo</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="extension_cultural.html">Extensión cultural</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="cuidado_ambiental.html">Cuidado ambiental</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/"><img class="navegacion__lista__elemento__icono-social" src="/imagenes/icono_facebook.svg" alt="logotipo de Facebook"></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/"><img class="navegacion__lista__elemento__icono-social" src="/imagenes/icono_instagram.svg" alt="logotipo de Instagram"></a>
-                      </li>
-                    </ul>
-                  </div>
-              </nav>
-        </header>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="proyecto_educativo.html">Presentación y fundamentos</a></li>
+                    <li><a class="dropdown-item" href="proyecto_educativo.html">Malla curricular y horarios</a></li>
+                    <li><a class="dropdown-item" href="proyecto_educativo.html">Espacios y salones</a></li>
+                    <li><a class="dropdown-item" href="proyecto_educativo.html">Campamentos educativos</a></li>
+                    <li><a class="dropdown-item" href="proyecto_educativo.html">Deportes</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="extension_cultural.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Extensión cultural
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="extension_cultural.html">La escuela es la comunidad</a></li>
+                    <li><a class="dropdown-item" href="extension_cultural.html">Talleres y horarios</a></li>
+                    <li><a class="dropdown-item" href="extension_cultural.html">Salón común</a></li>
+                    <li><a class="dropdown-item" href="extension_cultural.html">Campamentos comunitarios</a></li>
+                    <li><a class="dropdown-item" href="extension_cultural.html">Revista</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="cuidado_ambiental.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cuidado ambiental
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="cuidado_ambiental.html">Visión ecológica de la vida</a></li>
+                    <li><a class="dropdown-item" href="cuidado_ambiental.html">Gestión de residuos</a></li>
+                    <li><a class="dropdown-item" href="cuidado_ambiental.html">Limpieza de la playa</a></li>
+                    <li><a class="dropdown-item" href="cuidado_ambiental.html">Compost comunitario</a></li>
+                    <li><a class="dropdown-item" href="cuidado_ambiental.html">MEN (Microorganismos Eficientes Nativos)</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/"><img src="/Imagenes/icono_facebook.svg" alt="logotipo de Facebook"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/"><img src="/Imagenes/icono_instagram.svg" alt="logotipo de Instagram"></a>
+                </li>
+      </header>
         <main>
             <div class="container-fluid p-0">
                 <div class="row g-0 contenedor-imagen-texto">
@@ -86,12 +108,16 @@
             <section class="sobre-nosotros">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-lg-8">
+                        <div class="col-10 offset-1 col-md-8 offset-md-1">
                             <h2 class="sobre-nosotros__titulo">Sobre nosotros</h2>
                             <div class="sobre-nosotros__cuerpo">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio iure, quibusdam labore, dignissimos vero ullam sint amet quae ratione aperiam et incidunt numquam quas commodi suscipit? Laborum temporibus cupiditate perspiciatis.</p>
-                                <a class="ver-mas" href="sobre_nosotros.html">Ver más</a>
-                            </div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio iure, quibusdam labore, dignissimos vero ullam sint amet quae ratione aperiam et incidunt numquam quas commodi suscipit? Laborum temporibus cupiditate perspiciatis.</p>
+                                </div>
+                                <div class="boton row">
+                                    <button type="button" class="btn btn-vermas col-3 col-md-2">Ver más</button>
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                 </div>
