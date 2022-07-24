@@ -174,7 +174,6 @@ h2:hover {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-    grid-area: principal-paginas;
 }
 .principal-paginas__titulo{
     font-size: 45px;
@@ -233,19 +232,30 @@ h2:hover {
 }
 .footer {
     background-color: #16421F; 
-    padding-top:50px;
-    grid-area: footer;
-    display: flex;
-    flex-direction: row;
+    height: auto;
+}
+.footer__institucional {
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .footer__texto {
     font-size: 14px;
     color: white;
-    margin-left: 50px;
-    padding-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
-.footer__logotipo {
-    margin-left: 40px;
+.footer__titulo {
+    color: white;
+    font-family: roboto;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.footer__redes,
+.footer__contacto {
+    margin-left: 20px;
+    margin-top: 44px;
 }
 .contacto {
     font-family: roboto;
@@ -256,74 +266,4 @@ h2:hover {
 }
 .contacto:hover {
     font-size: 16.8px;
-}
-.social {
-    font-family: roboto;
-    font-weight: bold;
-    font-size: 14px;
-    text-decoration: none;
-    color: white;
-    vertical-align: middle;
-    margin-bottom: 40px;
-    display: inline-block;
-}
-.footer__icono-social {
-    vertical-align: middle;
-    margin-right: 10px;
-}
-.footer__derecha {
-    vertical-align: top;
-    margin-left: 750px;
-}
-@media (max-width: 1470px) {
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        max-width: 100%;
-        }
-    .footer__logotipo {
-        margin-left: 2%;
-        align-self: left;
-        margin-bottom: 2%;
-    }
-    .footer__texto {
-        margin-left: 5%;
-        align-self: left;
-    }
-    .footer__centro {
-        align-self: left;
-        margin: 0px;
-        max-width: 80%;
-    }
-    .footer__derecha {
-        align-self: left;
-        margin-left: 5%;
-    }
-}
-@media (max-width: 1200px) {
-    .sobre-nosotros {
-        margin-bottom: 40px;
-    }
-}
-@media (max-width: 992px) {
-    .iconos__elemento__imagen {
-        width: 70%;
-        display: block;
-        margin: auto;
-    }
-}
-@media (max-width: 1000px) {
-    .formulario {
-        max-width: 80%;
-    }
-}
-@media (max-width: 730px) {
-    .formulario__etiqueta {
-        display: block;
-        width: 100%;
-    }
-    .formulario__campo {
-        width: 100%;
-    }
 }
