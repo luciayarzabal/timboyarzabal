@@ -1,0 +1,35 @@
+.footer {
+    background-color: $color-principal; 
+    height: auto;
+}
+.footer__institucional {
+    margin-top: 20px;
+}
+.footer__texto {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.footer__titulo {
+    color: white;
+    font-family: roboto;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.footer__redes,
+.footer__contacto {
+    margin-top: 44px;
+}
+.contacto {
+    font-family: roboto;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: font-size 0.5s;
+    &:hover {
+        font-size: 16.8px;
+    }
+}
