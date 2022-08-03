@@ -1,2 +1,14 @@
 $color-principal: #16421F;
 $color-secundario: #E10029;
+$tamano-fuente: 16px;
+$parrafos: (
+    color:black,
+    text-align: left,
+    font-size: $tamano-fuente,
+    font-family: roboto, 
+);
+@mixin cuadrado($lado) {
+    width: $lado;
+    height: $lado;
+ }
+ 

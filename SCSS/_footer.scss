@@ -26,10 +26,13 @@
 .contacto {
     font-family: roboto;
     font-weight: bold;
-    text-decoration: none;
+    @extend .iconos__elemento__enlace;
     color: white;
     transition: font-size 0.5s;
     &:hover {
         font-size: 16.8px;
     }
+}
+.img-logo-footer {
+    @include cuadrado(40px)
 }

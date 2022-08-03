@@ -2,8 +2,8 @@ a:hover {
     color: white;
 }
 body {
-    font-family: roboto;
-    font-size: 18px;
+    font-family: map-get($parrafos, font-family);
+    font-size: map-get($parrafos, font-size);
 }
 img {
     max-width: 100%;
@@ -38,7 +38,7 @@ h2 {
     font-weight: bold;
 }
 .texto-principal__titulo {
-    font-size: 45px;
+    font-size: $tamano-fuente*2.5;
     font-family: roboto;
     margin-top: 40px;
     transition: transform 1s;
@@ -99,7 +99,7 @@ h2 {
     flex-direction: column;
 }
 .sobre-nosotros__titulo {
-    font-size: 25px;
+    font-size: $tamano-fuente*1.39;
     margin-bottom: 20px;
 }
 .btn.btn-vermas {

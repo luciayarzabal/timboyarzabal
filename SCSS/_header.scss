@@ -37,3 +37,6 @@
 .navbar-toggler:focus {
     box-shadow: none;
 }
+.img-logo-header {
+    @include cuadrado(30px)
+}
