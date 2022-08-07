@@ -197,9 +197,7 @@ h2 {
 .formulario {
   max-width: 800px;
   margin: auto;
-  margin-bottom: 40px;
-  display: flex;
-  flex-direction: column; }
+  margin-bottom: 40px; }
 
 .formulario__grupo {
   margin-top: 10px; }
