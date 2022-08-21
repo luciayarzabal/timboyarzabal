@@ -1,0 +1,29 @@
+.iconos {
+    margin-top: 100px;
+    list-style: none;
+    padding: 0;
+}
+.iconos__elemento:hover {
+    animation: sacudida 0.5s infinite linear;
+}
+.iconos__elemento__imagen {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+@keyframes sacudida {
+    from,
+    50%,
+    to {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+}
+.iconos__elemento__enlace {
+    text-decoration: none;
+}

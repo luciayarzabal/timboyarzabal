@@ -1,0 +1,31 @@
+.principal-paginas {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.principal-paginas__titulo{
+    font-size: 45px;
+    transition: transform 1s;
+    transform-origin: left;
+    &:hover {    
+        transform: scale(1.2);
+    }   
+}
+.paginas__cuerpo {
+    margin-bottom: 20px;
+}
+.secundario-paginas {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.secundario-paginas__titulo {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.carousel-inner {
+    max-height: 600px;
+    overflow: hidden;
+}

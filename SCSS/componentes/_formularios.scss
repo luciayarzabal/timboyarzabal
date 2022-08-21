@@ -1,0 +1,19 @@
+.formulario {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.formulario__grupo {
+    margin-top: 10px;
+}
+.formulario__campo {
+    padding: 5px 0;
+    border-radius: 7px;
+    border: solid black 1px;
+}
+.campo__mensaje {
+    display: block;
+    border: solid black 1px;
+    border-radius: 7px;
+    margin-top: 10px;
+}

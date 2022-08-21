@@ -17,6 +17,32 @@
   font-weight: 300;
   src: url(roboto/roboto-Light.ttf); }
 
+.iconos {
+  margin-top: 100px;
+  list-style: none;
+  padding: 0; }
+
+.iconos__elemento:hover {
+  animation: sacudida 0.5s infinite linear; }
+
+.iconos__elemento__imagen {
+  width: 80%;
+  display: block;
+  margin: auto; }
+
+@keyframes sacudida {
+  from,
+  50%,
+  to {
+    transform: rotate(0); }
+  25% {
+    transform: rotate(20deg); }
+  75% {
+    transform: rotate(-20deg); } }
+
+.iconos__elemento__enlace, .contacto {
+  text-decoration: none; }
+
 .header {
   background-color: #16421F; }
 
@@ -76,6 +102,73 @@ h2 {
   h2:hover {
     transform: scale(1.2); }
 
+.footer {
+  background-color: #16421F;
+  height: auto; }
+
+.footer__institucional {
+  margin-top: 20px; }
+
+.footer__texto {
+  font-size: 14px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 40px; }
+
+.footer__titulo {
+  color: white;
+  font-family: roboto;
+  font-weight: bold;
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 30px; }
+
+.footer__redes,
+.footer__contacto {
+  margin-top: 44px; }
+
+.contacto {
+  font-family: roboto;
+  font-weight: bold;
+  color: white; }
+
+.img-logo-footer {
+  width: 40px;
+  height: 40px; }
+
+.boton {
+  display: flex;
+  justify-content: flex-end; }
+
+.btn.btn-enviar {
+  background-color: #E10029;
+  color: white;
+  margin-top: 20px; }
+
+.btn.btn-vermas {
+  background-color: #E10029;
+  color: white;
+  margin-top: 20px; }
+
+.formulario {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 40px; }
+
+.formulario__grupo {
+  margin-top: 10px; }
+
+.formulario__campo {
+  padding: 5px 0;
+  border-radius: 7px;
+  border: solid black 1px; }
+
+.campo__mensaje {
+  display: block;
+  border: solid black 1px;
+  border-radius: 7px;
+  margin-top: 10px; }
+
 .imagen {
   position: sticky;
   top: 0; }
@@ -123,32 +216,6 @@ h2 {
   font-weight: bold;
   margin-top: 10px; }
 
-.iconos {
-  margin-top: 100px;
-  list-style: none;
-  padding: 0; }
-
-.iconos__elemento:hover {
-  animation: sacudida 0.5s infinite linear; }
-
-.iconos__elemento__imagen {
-  width: 80%;
-  display: block;
-  margin: auto; }
-
-@keyframes sacudida {
-  from,
-  50%,
-  to {
-    transform: rotate(0); }
-  25% {
-    transform: rotate(20deg); }
-  75% {
-    transform: rotate(-20deg); } }
-
-.iconos__elemento__enlace, .contacto {
-  text-decoration: none; }
-
 .sobre-nosotros {
   margin-bottom: 40px;
   margin-top: 40px;
@@ -158,11 +225,6 @@ h2 {
 .sobre-nosotros__titulo {
   font-size: 22.24px;
   margin-bottom: 20px; }
-
-.btn.btn-vermas {
-  background-color: #E10029;
-  color: white;
-  margin-top: 20px; }
 
 .principal-paginas {
   max-width: 80%;
@@ -180,10 +242,6 @@ h2 {
 .paginas__cuerpo {
   margin-bottom: 20px; }
 
-.carousel-inner {
-  max-height: 600px;
-  overflow: hidden; }
-
 .secundario-paginas {
   width: 80%;
   margin: auto;
@@ -194,67 +252,6 @@ h2 {
   font-size: 25px;
   margin-bottom: 20px; }
 
-.formulario {
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 40px; }
-
-.formulario__grupo {
-  margin-top: 10px; }
-
-.formulario__campo {
-  padding: 5px 0;
-  border-radius: 7px;
-  border: solid black 1px; }
-
-.campo__mensaje {
-  display: block;
-  border: solid black 1px;
-  border-radius: 7px;
-  margin-top: 10px; }
-
-.boton {
-  display: flex;
-  justify-content: flex-end; }
-
-.btn.btn-enviar {
-  background-color: #E10029;
-  color: white;
-  margin-top: 20px; }
-
-.footer {
-  background-color: #16421F;
-  height: auto; }
-
-.footer__institucional {
-  margin-top: 20px; }
-
-.footer__texto {
-  font-size: 14px;
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 40px; }
-
-.footer__titulo {
-  color: white;
-  font-family: roboto;
-  font-weight: bold;
-  text-align: left;
-  font-size: 18px;
-  margin-bottom: 30px; }
-
-.footer__redes,
-.footer__contacto {
-  margin-top: 44px; }
-
-.contacto {
-  font-family: roboto;
-  font-weight: bold;
-  color: white;
-  transition: font-size 0.5s; }
-  .contacto:hover {
-    font-size: 16.8px; }
-
-.img-logo-footer {
-  width: 40px;
-  height: 40px; }
+.carousel-inner {
+  max-height: 600px;
+  overflow: hidden; }

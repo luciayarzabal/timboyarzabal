@@ -1,0 +1,14 @@
+.boton{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn.btn-enviar {
+    background-color: $color-secundario;
+    color: white;
+    margin-top: 20px;
+}
+.btn.btn-vermas {
+    background-color: $color-secundario;
+    color: white;
+    margin-top: 20px;
+}

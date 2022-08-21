@@ -1,5 +1,10 @@
-@import "_variables";
-@import "_fuentes";
-@import "_header";
-@import "_bodies";
-@import "_footer";
+@import "./misc/variables";
+@import "./misc/fuentes";
+@import "./componentes/iconosyanimaciones";
+@import "./secciones/header";
+@import "_general";
+@import "./secciones/footer";
+@import "./componentes/botones";
+@import "./componentes/formularios";
+@import "./paginas/home";
+@import "./paginas/paginas";

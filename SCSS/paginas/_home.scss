@@ -1,0 +1,58 @@
+.imagen {
+    position: sticky;
+    top: 0;
+}
+.contenedor-imagen-texto {
+    margin-bottom: 40px;
+}
+.timbo_home {
+    width: 100%;
+    display: block;
+}
+.texto-principal {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.timbo {
+    color: $color-secundario;
+    font-family: roboto;
+    font-weight: bold;
+}
+.texto-principal__titulo {
+    font-size: $tamano-fuente*2.5;
+    font-family: roboto;
+    margin-top: 40px;
+    transition: transform 1s;
+    transform-origin: left;  
+    &:hover {
+        transform: scale(1.2);
+    } 
+}
+.texto-principal__cuerpo {
+    margin-top: 20px;
+}
+.texto-principal__cita {
+    text-align: right;
+    margin-top: 150px;
+    font-family: roboto;
+    font-style: italic;
+}
+.firma {
+    text-align: right;
+    color: $color-secundario;
+    font-family: roboto;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.sobre-nosotros {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.sobre-nosotros__titulo {
+    font-size: $tamano-fuente*1.39;
+    margin-bottom: 20px;
+}

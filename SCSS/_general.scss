@@ -1,0 +1,17 @@
+a:hover {
+    color: white;
+}
+body {
+    font-family: map-get($parrafos, font-family);
+    font-size: map-get($parrafos, font-size);
+}
+img {
+    max-width: 100%;
+}
+h2 {
+    transition: transform 1s;
+    transform-origin: left;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
